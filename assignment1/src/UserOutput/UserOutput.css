@@ -1,0 +1,14 @@
+.UserOutput {
+    border: 1px solid #ccc;
+    width: 60%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.UserOutput .user-output-p1 {
+    color: blue;
+}
+
+.UserOutput .user-output-p2 {
+    color: gray;
+}
