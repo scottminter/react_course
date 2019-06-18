@@ -26,8 +26,18 @@ class App extends Component {
 
   charClickedHandler = (charIndex) => {
     let chars = this.state.userInput;
+    let wordArr = [];
+
     chars = chars.slice(0, charIndex) + chars.slice(charIndex + 1);
+    wordArr = chars.split(' ');
+
+    if (wordArr.length === 1 && wordArr[0] === '') {
+      wordArr = [];
+    }
+
     this.setState({userInput: chars});
+    this.setState({charCount: chars.length});
+    this.setState({wordCount: wordArr.length});
   }
 
   render () {
