@@ -1,0 +1,10 @@
+.input-component {
+    margin: auto;
+    height: 200px;
+    background-color: #eee;
+}
+.input-component input {
+    margin: 10px 0 10px 0;
+    height: 30px;
+    width: 300px;
+  }
