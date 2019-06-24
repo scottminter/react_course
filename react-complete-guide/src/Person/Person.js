@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './Person.css';
 
 const person = (props) => {
+  // let r = Math.random();
+  // if (r < 0.3) {
+  //   throw new Error('Out of Bounds!');
+  // }
 
   return (
     <div className={ styles.Person }>
