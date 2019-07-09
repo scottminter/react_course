@@ -5,10 +5,10 @@ import Aux from './../../hoc/Aux.js';
 const layout = props => {
   return (
     <Aux>
-      <div className={styles.layout}>
+      <div>
         Toolbar, Sidedrawer, Backdrops
       </div>
-      <main>
+      <main className={styles.Content}>
         {props.children}
       </main>
     </Aux>
