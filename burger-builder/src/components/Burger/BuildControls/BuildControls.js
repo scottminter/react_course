@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './BuildControls.module.css';
 import BuildControl from './BuildControl/BuildControl';
+import Price from './Price/Price';
 
 const controls = [
   {label: 'Salad', type: 'salad'},
@@ -12,7 +13,7 @@ const controls = [
 const buildControls = props => {
   return (
     <div className={styles.BuildControls}>
-      <p>Current Price: <strong>${props.totalPrice.toFixed(2)}</strong></p>
+      <Price label="Current Price" price={props.totalPrice} />
       {controls.map(ctrl => (
         <BuildControl
           key={ctrl.label}
